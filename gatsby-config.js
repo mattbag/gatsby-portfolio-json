@@ -12,7 +12,7 @@ module.exports = {
     { 
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: true,
+        printRejected: false,
         develop: true, // Enable while using `gatsby develop`
         tailwind: true, // Enable tailwindcss support
       }
@@ -25,6 +25,17 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    // screenshot stuff
+    'gatsby-transformer-screenshot',
+    'gatsby-transformer-yaml',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'data',
+        path: `${__dirname}/src/data`,
+      },
+    },
+    //images stuff
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {

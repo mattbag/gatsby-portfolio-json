@@ -2,15 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+$main: 'blue';
+$accent: 'orange';
+
 body,
 html {
-  @apply font-sans text-black;
+  @apply font-sans text-white bg-black;
 }
 
-a.link {
-  @apply no-underline text-teal;
-
-  &:hover {
-    @apply text-teal-dark;
+a {
+  @apply no-underline text-#{$main}-lighter;
+  &:hover ,
+  &:visited{
+    @apply text-#{$main}-light;
   }
+}
+
+p{
+  @apply mb-2;
 }

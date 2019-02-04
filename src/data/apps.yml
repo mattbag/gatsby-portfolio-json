@@ -1,0 +1,18 @@
+- url: https://mattbag.github.io/ion-pm
+  name: Atlas Go
+  copy: Project Mangement app lugged into firebase. Mobile and desktop.
+- url: https://mattbag.github.io/coffeerun-repo/
+  name: CoffeeRun
+  copy: Be the office hero! Firebase store and auth (now off)
+- url: https://mattbag.github.io/tinderwars
+  name: Tinder Wars
+  copy: Playing around with Ionic2 during a 12h star wars hackaton
+- url: https://mattbag.github.io/dosnap
+  name: ToDo App
+  copy: Ionic2 and angular, extended to use localstorage, and snap pictures
+- url: https://mattbag.github.io/ion-hub
+  name: Github explorer
+  copy: Simple tutorial on Ionic, extended to show cool github data
+- url: https://mattbag.github.io/ionic-wo-blog
+  name: Ionic Blog with wp
+  copy: Wrapper for a wp blog made with ionic

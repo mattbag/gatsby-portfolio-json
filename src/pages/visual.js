@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 
-const SecondPage = () => (
+const VisualPage = () => (
   <Layout>
     <h1 className="mb-4">Hi from the second page</h1>
     <p className="leading-loose">Welcome to page 2</p>
@@ -12,4 +12,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default VisualPage
