@@ -37,7 +37,7 @@ const Layout = ({ children }) => (
           <a className="text-center" href="https://www.gatsbyjs.org/" rel="noopener noreferrer" target="_blank">
             <div className="p-2">
               Powered By
-              <div className="my-4 mx-auto" style={{ maxWidth: '120px', borderRadius: 500, overflow: 'hidden' }}>
+              <div className="my-4 mx-auto float" style={{ maxWidth: '120px', borderRadius: 500, overflow: 'hidden' }}>
                 <Image />
               </div>
             </div>

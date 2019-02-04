@@ -7,7 +7,8 @@ $accent: 'orange';
 
 body,
 html {
-  @apply font-sans text-white bg-black;
+  @apply font-mono text-white bg-black;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -20,4 +21,14 @@ a {
 
 p{
   @apply mb-2;
+}
+
+.float{
+  animation: float_an 2s alternate infinite;
+}
+
+@keyframes float_an{
+  to{
+    transform: translateY(-10px);
+  }
 }

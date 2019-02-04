@@ -5,7 +5,7 @@ import Logo from './logo'
 
 
 const Header = ({ siteTitle }) => (
-  <div className="bg-blackest text-white py-4 sticky pin-t">
+  <div className="bg-blackest text-white py-4">
     <div className="container mx-auto flex justify-between">
       <h1>
         <Link to="/" className="no-underline">
@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <div style={{width:80, flexShrink: 1, marginBottom: -100, marginTop:-2}}>
-       <Link to="/" className="no-underline">
+       <Link to="/" className="float no-underline">
         <Logo />
        </Link>
       </div>
