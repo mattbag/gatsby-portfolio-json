@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 // import Image from '../components/image'
 import Layout from '../components/layout'
-import Nav from '../components/nav'
+// import Nav from '../components/nav'
 
 export const query = graphql`
 query {
@@ -14,7 +14,6 @@ query {
       }
     }
   }
-
   allAppsYaml {
     edges {
       node {
@@ -34,7 +33,7 @@ const IndexPage = ({ data:
  }
 }) => (
     <Layout>
-      <Nav/>
+      {/* <Nav/> */}
       {/* <pre>{console.log(sites)}</pre> */}
       <div className="p-8">
         <p>{"{"}</p>

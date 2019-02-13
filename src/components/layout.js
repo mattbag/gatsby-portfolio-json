@@ -5,6 +5,8 @@ import PropTypes from 'prop-types'
 import Image from './image'
 import { StaticQuery, graphql } from 'gatsby'
 
+import Nav from './nav'
+
 import '../sass/layout.scss'
 
 const Layout = ({ children }) => (
@@ -30,7 +32,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-
+<Nav/>
         <div className="container mx-auto py-8">{children}</div>
 
         <footer>

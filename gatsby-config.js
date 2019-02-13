@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby TailwindCSS Starter',
+    title: '🎩 Matt__Bagni--2019',
   },
   plugins: [
     {
@@ -41,13 +41,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Gatsby TailwindCSS + SASS Starter',
+        name: 'Matt Bagni - 2019',
         short_name: 'gatstail',
         start_url: '/',
         background_color: '#4dc0b5',
         theme_color: '#4dc0b5',
-        display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        display: 'fullscreen',
+        icon: 'src/images/logo.png', // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

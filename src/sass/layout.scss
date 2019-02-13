@@ -5,16 +5,30 @@
 $main: 'blue';
 $accent: 'orange';
 
+:root {
+  --black: #1b2836;
+  --white: #fff;
+  --blue: #0e7decdc;
+  --shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.7);
+  --body-skew: 2deg;
+  --cells: 2;
+}
+html{
+  font-size: 110%;
+}
 body,
 html {
   @apply font-mono text-white bg-black;
   scroll-behavior: smooth;
 }
 
+[target="_blank"] {
+  cursor: alias;
+}
+
 a {
   @apply no-underline text-#{$main}-lighter;
-  &:hover ,
-  &:visited{
+  &:hover {
     @apply text-#{$main}-light;
   }
 }

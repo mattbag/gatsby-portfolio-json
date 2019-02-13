@@ -7,7 +7,7 @@ import Logo from './logo'
 const Header = ({ siteTitle }) => (
   <div className="bg-blackest text-white py-4">
     <div className="container mx-auto flex justify-between">
-      <h1>
+      <h1 className="text-lg md:text-xl">
         <Link to="/" className="no-underline">
           /MattBag/2019/portfolio
         </Link>
