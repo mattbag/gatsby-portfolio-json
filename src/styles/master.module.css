@@ -5,8 +5,8 @@
       justify-content: center;
       display: grid;
       margin: 1rem auto;
-      grid-gap: 6vw;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      grid-gap: 10vmin;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
 
   .site a {
@@ -31,19 +31,23 @@
   }
 
   .label {
-      background-color: var(--blue,rgba(0, 0, 255, 0.671));
+      background-color: var(--blue, rgba(0, 0, 255, 0.671));
       /* padding: .25rem; */
       grid-area: 1/1/1/4;
-      margin-bottom: 1rem;
-      margin-left: -1rem;
+      margin-bottom: -1rem;
+      margin-left: -.6rem;
       z-index: 1;
   }
 
   .label__in {
       font-weight: bold;
-      /* line-height: .8; */
       font-size: 1.2rem;
-      transform: translate3d(-1rem, -1rem, 0);
+      transform: translate3d(-10%, -20%, 0);
+      transition: transform 200ms ease;
+  }
+
+  .site a:hover .label__in {
+      transform: translate3d(10%, 10%, 0);
   }
 
   @supports (grid-area: auto) {

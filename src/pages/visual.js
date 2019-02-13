@@ -3,14 +3,15 @@ import {  graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
 
+import Phone from './../components/phone'
+
 import styles from '../styles/master.module.css'
-// import appSstyles from '../styles/apps.module.css'
+import appSstyles from '../styles/apps.module.css'
 
 const VisualPage = ({ data }) => (
   <Layout>
-    
+    <div className="my-8" id="sites"></div>
     <div className={styles.grid}>
-
       {data.allSitesYaml &&
         data.allSitesYaml.edges.map(({ node: { childScreenshot, name, url } }, index) => (
           <div className={styles.site} key={index}>
@@ -29,6 +30,48 @@ const VisualPage = ({ data }) => (
               </div>
             </a>
           </div>
+        ))}
+    </div>
+
+<div className="my-8 py-8" id="apps"></div>
+
+
+    <div className={appSstyles.rx}>
+      {data.allAppsYaml &&
+        data.allAppsYaml.edges.map(({ node }, i) => (
+          <React.Fragment key={`app_${i}`}>
+            <div className={`${appSstyles.app} ${styles.show__dk}`}>
+              <Phone url={node.url} />
+            </div>
+            {i === 0 && (
+              <div className={appSstyles.empty}>
+                <h2 style={{ fontSize: `calc(2rem + 4vw)` }}>Apps</h2>
+              </div>
+            )}
+            <div
+              className={appSstyles.apptext}
+              style={{
+                textAlign: i % 2 === 0 ? '' : 'right',
+              }}
+            >
+              <h2 className="mt-0" style={{ fontSize: `var(--h-size)` }}>{node.name}</h2>
+              <p className="my-8">{node.copy}</p>
+              <a
+                href={node.url}
+                target="_blank"
+                
+                rel="noopener noreferrer"
+                style={{
+                  color: 'white',
+                  borderLeft: `2px dotted var(--blue)`,
+                  padding: `.5rem`,
+                  textDecoration: 'none',
+                }}
+              >
+                open in browser
+              </a>
+            </div>
+          </React.Fragment>
         ))}
     </div>
 
@@ -57,6 +100,15 @@ export const query = graphql`
               }
             }
           }
+        }
+      }
+    }
+    allAppsYaml {
+      edges {
+        node {
+          url
+          name
+          copy
         }
       }
     }

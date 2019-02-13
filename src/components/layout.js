@@ -6,6 +6,7 @@ import Image from './image'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Nav from './nav'
+import Socials from './socials'
 
 import '../sass/layout.scss'
 
@@ -32,18 +33,20 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-<Nav/>
-        <div className="container mx-auto py-8">{children}</div>
+        <Nav />
+        <div className="container mx-auto py-8" style={{maxWidth:'90%'}}>{children}</div>
 
-        <footer>
-          <a className="text-center" href="https://www.gatsbyjs.org/" rel="noopener noreferrer" target="_blank">
-            <div className="p-2">
-              Powered By
-              <div className="my-4 mx-auto float" style={{ maxWidth: '120px', borderRadius: 500, overflow: 'hidden' }}>
+        <footer className="mt-10">
+          <Socials />
+
+          <div className="p-4 text-center">
+            <a className="inline-block" href="https://www.gatsbyjs.org/" rel="noopener noreferrer" target="_blank">
+              {`> Powered By <`}
+              <div className="my-4 mx-auto float" style={{ maxWidth: '100px', borderRadius: 500, overflow: 'hidden' }}>
                 <Image />
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </footer>
       </>
     )}
