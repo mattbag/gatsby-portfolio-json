@@ -43,18 +43,18 @@ const VisualPage = ({ data }) => (
             <div className={`${appSstyles.app} ${styles.show__dk}`}>
               <Phone url={node.url} />
             </div>
-            {i === 0 && (
+            {/* {i === 0 && (
               <div className={appSstyles.empty}>
                 <h2 style={{ fontSize: `calc(2rem + 4vw)` }}>Apps</h2>
               </div>
-            )}
+            )} */}
             <div
               className={appSstyles.apptext}
               style={{
                 textAlign: i % 2 === 0 ? '' : 'right',
               }}
             >
-              <h2 className="mt-0" style={{ fontSize: `var(--h-size)` }}>{node.name}</h2>
+              <h2 className="mt-0" style={{ fontSize: `var(--h-size)` }}>{i % 2 === 0 && '<= '}{node.name}{i % 2 !== 0 && ' =>'}</h2>
               <p className="my-8">{node.copy}</p>
               <a
                 href={node.url}
