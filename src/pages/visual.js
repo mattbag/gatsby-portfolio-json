@@ -17,7 +17,7 @@ const VisualPage = ({ data }) => (
           ({ node: { childScreenshot, name, url } }, index) => (
             <article className={styles.site} key={index}>
               <a href={url} target="_blank" rel="noopener noreferrer">
-                <div className={styles.pic}>
+                <div className={styles.pic + " shadow"}>
                   {childScreenshot && (
                     <Img
                       fluid={
@@ -29,7 +29,7 @@ const VisualPage = ({ data }) => (
                   )}
                 </div>
                 <div className={styles.label}>
-                  <div className={styles.label__in}>{name}</div>
+                  <div className={styles.label__in}>{`{data: "${name}"`}}</div>
                 </div>
               </a>
             </article>

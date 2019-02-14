@@ -1,4 +1,6 @@
 - url: https://mattbag.github.io
+  name: My Portfolio 2019
+- url: https://mattbag.github.io/portfolio-2018
   name: My Portfolio 2018
 - url: https://mattbag.github.io/wp-gatsby
   name: Gatsby wp demo
@@ -23,7 +25,7 @@
 - url: http://caoa.com.au
   name: WP Custom Site
 - url: https://www.beautyinsider.com.au
-  name: WP Custom Blog
+  name: Umbraco Custom Site
 - url: https://www.centralelement.com.au
   name: WP Custom Site
 - url: https://www.themalton.com.au
@@ -32,14 +34,16 @@
   # name: Static Umbraco Site
 - url: https://brainlightwellness.com.au/
   name: WP Custom Site
+- url: https://rayleighstudio.com.au/
+  name: WP Custom Site
 - url: https://av1.com.au
   name: WP Custom Site
 - url: http://www.massimomele.com
   name: WP Custom Site
 - url: https://buterinlestrange.com.au
   name: WP Custom Site
-- url: http://www.thehourglass.com
-  name: WP Custom Multi site network
+# - url: http://www.thehourglass.com
+#   name: WP Custom Multi site network
 - url: http://www.pallascapital.com.au
   name: Umbraco Custom Site
 - url: http://www.mulfordplastics.com.au
