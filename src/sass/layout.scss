@@ -8,13 +8,13 @@ $accent: 'orange';
 :root {
   --black: #1b2836;
   --white: #fff;
-  --blue: #0e7decdc;
+  --blue: #1990ccd0;
   --shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.7);
   --body-skew: 2deg;
   --cells: 3;
   --h-size: calc(1rem + 2vw);
 }
-html{
+html {
   font-size: 120%;
 }
 body,
@@ -23,7 +23,7 @@ html {
   scroll-behavior: smooth;
 }
 
-[target="_blank"] {
+[target='_blank'] {
   cursor: alias;
 }
 
@@ -35,16 +35,16 @@ a {
   }
 }
 
-p{
+p {
   @apply mb-2;
 }
 
-.float{
+.float {
   animation: float_an 2s alternate infinite;
 }
 
-@keyframes float_an{
-  to{
+@keyframes float_an {
+  to {
     transform: translateY(-10px);
   }
 }

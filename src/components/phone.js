@@ -17,7 +17,7 @@ export default class Phone extends Component {
           styles.show__dk
         }`}
         style={{
-          paddingTop: `${640 / 420 * 100}%`,
+          paddingTop: `${(640 / 420) * 100}%`,
         }}
       >
         <div
@@ -54,7 +54,7 @@ export default class Phone extends Component {
           </div>
         </div>
         <iframe
-        title={this.props.name}
+          title={this.props.name}
           src={this.state.play ? this.props.url : ''}
           className={appStyles.frame}
         />

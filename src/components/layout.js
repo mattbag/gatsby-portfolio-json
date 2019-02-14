@@ -34,15 +34,29 @@ const Layout = ({ children }) => (
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <Nav />
-        <div className="container mx-auto py-8" style={{maxWidth:'90%'}}>{children}</div>
+        <div className="container mx-auto py-8" style={{ maxWidth: '90%' }}>
+          {children}
+        </div>
 
         <footer className="mt-10">
           <Socials />
 
           <div className="p-4 text-center">
-            <a className="inline-block" href="https://www.gatsbyjs.org/" rel="noopener noreferrer" target="_blank">
+            <a
+              className="inline-block"
+              href="https://www.gatsbyjs.org/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               {`> Powered By <`}
-              <div className="my-4 mx-auto float" style={{ maxWidth: '100px', borderRadius: 500, overflow: 'hidden' }}>
+              <div
+                className="my-4 mx-auto float"
+                style={{
+                  maxWidth: '100px',
+                  borderRadius: 500,
+                  overflow: 'hidden',
+                }}
+              >
                 <Image />
               </div>
             </a>

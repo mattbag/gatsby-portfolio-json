@@ -10,31 +10,34 @@ import appSstyles from '../styles/apps.module.css'
 
 const VisualPage = ({ data }) => (
   <Layout>
-    <div className="py-6" id="sites"></div>
+    <div className="py-6" id="sites" />
     <section className={styles.grid}>
       {data.allSitesYaml &&
-        data.allSitesYaml.edges.map(({ node: { childScreenshot, name, url } }, index) => (
-          <article className={styles.site} key={index}>
-            <a href={url} target="_blank" rel="noopener noreferrer">
-              <div className={styles.pic}>
-                {childScreenshot &&
-                  <Img
-                    fluid={childScreenshot.screenshotFile.childImageSharp.fluid}
-                    alt={name}
-                    className={styles.shadow}
-                  />
-                }
-              </div>
-              <div className={styles.label}>
-                <div className={styles.label__in}>{name}</div>
-              </div>
-            </a>
-          </article>
-        ))}
+        data.allSitesYaml.edges.map(
+          ({ node: { childScreenshot, name, url } }, index) => (
+            <article className={styles.site} key={index}>
+              <a href={url} target="_blank" rel="noopener noreferrer">
+                <div className={styles.pic}>
+                  {childScreenshot && (
+                    <Img
+                      fluid={
+                        childScreenshot.screenshotFile.childImageSharp.fluid
+                      }
+                      alt={name}
+                      className={styles.shadow}
+                    />
+                  )}
+                </div>
+                <div className={styles.label}>
+                  <div className={styles.label__in}>{name}</div>
+                </div>
+              </a>
+            </article>
+          )
+        )}
     </section>
 
-    <div className="py-6 my-6" id="apps"></div>
-
+    <div className="py-6 my-6" id="apps" />
 
     <section className={appSstyles.rx}>
       {data.allAppsYaml &&
@@ -54,12 +57,15 @@ const VisualPage = ({ data }) => (
                 textAlign: i % 2 === 0 ? '' : 'right',
               }}
             >
-              <h2 className="mt-0" style={{ fontSize: `var(--h-size)` }}>{i % 2 === 0 && '<= '}{node.name}{i % 2 !== 0 && ' =>'}</h2>
+              <h2 className="mt-0" style={{ fontSize: `var(--h-size)` }}>
+                {i % 2 === 0 && '<= '}
+                {node.name}
+                {i % 2 !== 0 && ' =>'}
+              </h2>
               <p className="my-8">{node.copy}</p>
               <a
                 href={node.url}
                 target="_blank"
-
                 rel="noopener noreferrer"
                 style={{
                   color: 'white',
@@ -75,10 +81,12 @@ const VisualPage = ({ data }) => (
         ))}
     </section>
 
-    <div style={{ maxWidth: "300px", bottom: 10, left: 10 }} className={styles.blocker + " fixed p-4 bg-blue-light"}>
+    <div
+      style={{ maxWidth: '300px', bottom: 10, left: 10 }}
+      className={styles.blocker + ' fixed p-4 bg-blue-light'}
+    >
       You might want an updated browser to see this correctly!
     </div>
-
   </Layout>
 )
 
@@ -113,4 +121,4 @@ export const query = graphql`
       }
     }
   }
-  `
+`

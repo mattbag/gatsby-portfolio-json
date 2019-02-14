@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import Logo from './logo'
 
-
 const Header = ({ siteTitle }) => (
   <header className="bg-blackest p-4">
     <div className="container mx-auto flex justify-between">
@@ -12,10 +11,12 @@ const Header = ({ siteTitle }) => (
           /MattBagni/2019/portfolio
         </Link>
       </h1>
-      <div style={{width:80, flexShrink: 1, marginBottom: -100, marginTop:-2}}>
-       <Link to="/" className="float no-underline">
-        <Logo />
-       </Link>
+      <div
+        style={{ width: 80, flexShrink: 1, marginBottom: -100, marginTop: -2 }}
+      >
+        <Link to="/" className="float no-underline">
+          <Logo />
+        </Link>
       </div>
     </div>
   </header>
