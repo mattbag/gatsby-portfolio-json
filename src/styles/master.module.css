@@ -47,7 +47,7 @@
   }
 
   .site a:hover .label__in {
-      transform: translate3d(10%, 10%, 0);
+      transform: translate3d(10%, 10%, 0) scale(1.2);
   }
 
   @supports (grid-area: auto) {

@@ -5,11 +5,11 @@ import Logo from './logo'
 
 
 const Header = ({ siteTitle }) => (
-  <div className="bg-blackest text-white p-4">
+  <header className="bg-blackest p-4">
     <div className="container mx-auto flex justify-between">
       <h1 className="text-lg md:text-xl">
-        <Link to="/" className="no-underline">
-          /MattBag/2019/portfolio
+        <Link to="/" className="no-underline text-blue">
+          /MattBagni/2019/portfolio
         </Link>
       </h1>
       <div style={{width:80, flexShrink: 1, marginBottom: -100, marginTop:-2}}>
@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
        </Link>
       </div>
     </div>
-  </div>
+  </header>
 )
 
 Header.propTypes = {

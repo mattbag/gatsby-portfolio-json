@@ -1,5 +1,5 @@
 import React from 'react'
-import {  graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
 
@@ -10,11 +10,11 @@ import appSstyles from '../styles/apps.module.css'
 
 const VisualPage = ({ data }) => (
   <Layout>
-    <div className="my-8" id="sites"></div>
-    <div className={styles.grid}>
+    <div className="py-6" id="sites"></div>
+    <section className={styles.grid}>
       {data.allSitesYaml &&
         data.allSitesYaml.edges.map(({ node: { childScreenshot, name, url } }, index) => (
-          <div className={styles.site} key={index}>
+          <article className={styles.site} key={index}>
             <a href={url} target="_blank" rel="noopener noreferrer">
               <div className={styles.pic}>
                 {childScreenshot &&
@@ -29,14 +29,14 @@ const VisualPage = ({ data }) => (
                 <div className={styles.label__in}>{name}</div>
               </div>
             </a>
-          </div>
+          </article>
         ))}
-    </div>
+    </section>
 
-<div className="my-8 py-8" id="apps"></div>
+    <div className="py-6 my-6" id="apps"></div>
 
 
-    <div className={appSstyles.rx}>
+    <section className={appSstyles.rx}>
       {data.allAppsYaml &&
         data.allAppsYaml.edges.map(({ node }, i) => (
           <React.Fragment key={`app_${i}`}>
@@ -59,7 +59,7 @@ const VisualPage = ({ data }) => (
               <a
                 href={node.url}
                 target="_blank"
-                
+
                 rel="noopener noreferrer"
                 style={{
                   color: 'white',
@@ -73,10 +73,10 @@ const VisualPage = ({ data }) => (
             </div>
           </React.Fragment>
         ))}
-    </div>
+    </section>
 
-    <div style={{maxWidth:"300px", bottom:10,left:10}} className={styles.blocker + " fixed p-4 bg-blue-light"}>
-    You might want an updated browser to see this correctly!
+    <div style={{ maxWidth: "300px", bottom: 10, left: 10 }} className={styles.blocker + " fixed p-4 bg-blue-light"}>
+      You might want an updated browser to see this correctly!
     </div>
 
   </Layout>

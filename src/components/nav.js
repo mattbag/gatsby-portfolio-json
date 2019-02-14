@@ -5,7 +5,7 @@ const vertical = {
   writingMode: 'vertical-rl'
 }
 const Nav = () => (
-  <div className="py-6 fixed pin-r pin-t-10">
+  <nav className="py-6 fixed pin-r pin-t-10">
 
       <ul style={vertical} className="list-reset flex">
         <li className="m-2 md:m-4"><Link to="/">/json</Link></li>
@@ -16,7 +16,7 @@ const Nav = () => (
         <li className="m-2 md:m-4"><Link to="/visual">/visual</Link></li>
       </ul>
 
-  </div>
+  </nav>
 )
 
 export default Nav
