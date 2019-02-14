@@ -7,7 +7,7 @@ const Header = ({ siteTitle }) => (
   <header className="bg-blackest p-4">
     <div className="container mx-auto flex justify-between">
       <h1 className="text-base md:text-xl">
-        <Link to="/" className="no-underline text-blue">
+        <Link to="/" className="no-underline text-blue-light">
           /MattBagni/2019/portfolio
         </Link>
       </h1>

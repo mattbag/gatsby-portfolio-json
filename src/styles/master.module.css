@@ -42,7 +42,7 @@
   .label__in {
       font-weight: bold;
       font-size: 1.2rem;
-      transform: translate3d(-5%, -14%, 0);
+      transform: translate3d(-5%, -140%, 0);
       transition: transform 200ms ease;
   }
 

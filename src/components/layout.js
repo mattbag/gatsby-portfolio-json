@@ -32,7 +32,11 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
+
+        <div className="bg py-1"></div>
+
         <Header siteTitle={data.site.siteMetadata.title} />
+
         <Nav />
         <div className="container mx-auto py-8" style={{ maxWidth: '90%' }}>
           {children}
@@ -61,6 +65,7 @@ const Layout = ({ children }) => (
               </div>
             </a>
           </div>
+          <div className="bg py-1"></div>
         </footer>
       </>
     )}

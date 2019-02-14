@@ -51,3 +51,10 @@ p {
     transform: translateY(-10px);
   }
 }
+
+.bg {
+  background-color:#0087ff;
+  background-image: url('/img/as.gif');
+  background-attachment: fixed;
+  background-blend-mode: luminosity;
+}

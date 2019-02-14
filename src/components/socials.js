@@ -8,7 +8,7 @@ const links = [
 ]
 
 export default () => (
-  <aside id="channels" className="my-8 py-8">
+  <aside id="channels" className="my-8 py-8 bg">
     <ul
       style={{
         backgroundColor: 'var(--black)',
