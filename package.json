@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-tailwindcss-sass-starter",
-  "description": "Just another Gatsby TailwindCSS with SASS starter ",
+  "name": "gatsby-tailwindcss-portoflio-2019",
+  "description": "Just another Gatsby TailwindCSS with SASS portfolio",
   "version": "1.0.0",
-  "author": "Durian <Stack/> <durianstack@gmail.com>",
+  "author": "Matt Bagni <mattbag00@gmail.com>",
   "dependencies": {
     "gatsby": "^2.1.0",
     "gatsby-image": "^2.0.29",
@@ -41,6 +41,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/durianstack/gatsby-tailwindcss-sass-starter"
+    "url": "https://github.com/mattbag/gatsby-portfolio-json"
+  },
+  "resolutions": {
+    "terser": "3.14.1"
   }
 }
