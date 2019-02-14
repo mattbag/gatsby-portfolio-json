@@ -33,8 +33,7 @@ const IndexPage = ({ data:
  }
 }) => (
     <Layout>
-      {/* <Nav/> */}
-      {/* <pre>{console.log(sites)}</pre> */}
+
       <div className="p-8">
         <p>{"{"}</p>
         <div className="pl-4">
@@ -46,7 +45,7 @@ const IndexPage = ({ data:
           {'"Version" : "2019",'}
         </p>
         <p>
-          {'"Location" : "Sydney",'}
+          {'"Location" : '}<a target="_blank" rel="noopener noreferrer" href="//atlasagency.com.au">"Sydney"</a>
         </p>
         <p>
           {'"Visual version" :'} <Link to="/visual">"Visit"</Link>,

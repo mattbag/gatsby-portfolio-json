@@ -15,7 +15,7 @@ $accent: 'orange';
   --h-size: calc(1rem + 2vw);
 }
 html{
-  font-size: 110%;
+  font-size: 120%;
 }
 body,
 html {
@@ -28,6 +28,7 @@ html {
 }
 
 a {
+  cursor: crosshair;
   @apply no-underline text-#{$main}-lighter;
   &:hover {
     @apply text-#{$main}-light;
