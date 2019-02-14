@@ -15,7 +15,10 @@ $accent: 'orange';
   --h-size: calc(1rem + 2vw);
 }
 html {
-  font-size: 120%;
+  font-size: 100%;
+  @media screen and (min-wdith:768px){
+    font-size: 120%;
+  }
 }
 body,
 html {

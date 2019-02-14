@@ -32,9 +32,9 @@ const IndexPage = ({
   },
 }) => (
   <Layout>
-    <div className="p-8">
+    <div className="p-2 md:p-8 overflow-auto">
       <p>{'{'}</p>
-      <div className="pl-4">
+      <div className="pl-4" style={{whiteSpace:'nowrap'}}>
         <p>{'"Author" : "Matt Bagni",'}</p>
         <p>{'"Version" : "2019",'}</p>
         <p>
