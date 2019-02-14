@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: '🎩 Matt__Bagni--2019',
+    title: 'Matt__Bagni--2019 🎩',
   },
   plugins: [
     {
@@ -13,7 +13,7 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: false,
-        develop: true, // Enable while using `gatsby develop`
+        develop: false, // Enable while using `gatsby develop`
         tailwind: true, // Enable tailwindcss support
       }
     },

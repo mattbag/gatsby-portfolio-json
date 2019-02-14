@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 $main: 'blue';
 $accent: 'orange';
 
@@ -22,8 +23,8 @@ html {
 }
 body,
 html {
-  @apply font-mono text-white bg-black;
   scroll-behavior: smooth;
+  @apply font-mono text-white bg-black;
 }
 
 [target='_blank'] {
