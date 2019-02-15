@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Matt__Bagni--2019 🎩',
+    description: 'Keep up to date with what I am doing! Or get in touch even!',
   },
   plugins: [
     {
