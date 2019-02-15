@@ -42,16 +42,16 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'Matt Bagni - 2019',
-        short_name: 'gatstail',
+        short_name: 'Matt Bagni',
         start_url: '/',
-        background_color: '#4dc0b5',
-        theme_color: '#4dc0b5',
+        background_color: '#1a1a1a',
+        theme_color: '#1a1a1a',
         display: 'fullscreen',
         icon: 'src/images/logo.png', // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
   ],
 }

@@ -6,6 +6,16 @@
   name: Gatsby wp demo
 # - url: https://gatsby-gallery-netlify-cms.netlify.com
   # name: Gatsby Gallery Starter
+- url: https://divebell.band
+  name: Gatsby + Netlify CMS
+- url: https://lisaye.netlify.com
+  name: Gatsby + Netlify CMS
+- url: https://ancient-silverback.netlify.com
+  name: Nuxt + storyblok
+- url: https://bubbling-beebles.netlify.com
+  name: Nuxt + storyblok
+- url: https://nuxt-drivershub.netlify.com
+  name: Nuxt + WP Community
 - url: https://mattbag-2017.netlify.com
   name: Gatsby Contenful
 - url: http://borntobewise.altervista.org
@@ -32,9 +42,9 @@
   name: WP Custom Site
 # - url: https://www.drivershq.com.au
   # name: Static Umbraco Site
-- url: https://brainlightwellness.com.au/
+- url: https://brainlightwellness.com.au
   name: WP Custom Site
-- url: https://rayleighstudio.com.au/
+- url: https://rayleighstudio.com.au
   name: WP Custom Site
 - url: https://av1.com.au
   name: WP Custom Site

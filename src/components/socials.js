@@ -5,6 +5,7 @@ const links = [
   { name: 'linkedin', link: 'https://www.linkedin.com/in/matteobagni88/' },
   { name: 'twitter', link: 'https://mobile.twitter.com/mattbag00' },
   { name: 'codepen', link: 'https://codepen.io/mattbag/' },
+  { name: 'dev.to', link: 'https://dev.to/mattbag00' },
 ]
 
 export default () => (

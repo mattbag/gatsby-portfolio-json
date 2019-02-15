@@ -26,8 +26,7 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Keep up to date with what I am doing! Or get in touch even!' }
           ]}
         >
           <html lang="en" />
@@ -38,9 +37,9 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
 
         <Nav />
-        <div className="container mx-auto py-8" style={{ maxWidth: '90%' }}>
+        <main className="container mx-auto py-8" style={{ maxWidth: '90%' }}>
           {children}
-        </div>
+        </main>
 
         <footer className="mt-10">
           <Socials />
