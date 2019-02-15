@@ -1,25 +1,25 @@
-.row {
+/* .row {
     display: grid;
     grid-template-columns: 6vw 2fr 2fr 6vw;
     grid-auto-flow: dense;
     grid-gap: 2vw;
     padding: 2vw;
     align-items: center
-  }
+  } */
   
   .rx {
+    --max: 1000px;
+    --gap-y: 4vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    /* grid-auto-rows: minmax(60px, auto); */
-    grid-gap: 6vw 4vw;
-    width: 1000px;
-    max-width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, calc(var(--max)/2 - var(--gap-y)/2)));
+    grid-gap: 6vw var(--gap-y);
+    max-width: var(--max);
+    /* max-width: 80%; */
     margin: auto;
   }
   
   .app {
     grid-row: span 6;
-    /* background: blue; */
   }
   
   .empty {

@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Matt Bagni <mattbag00@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.1.0",
+    "gatsby": "^2.1.2",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-manifest": "^2.0.17",
     "gatsby-plugin-offline": "^2.0.23",
@@ -18,8 +18,8 @@
     "gatsby-transformer-yaml": "^2.1.8",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
     "react-helmet": "^5.2.0",
     "tailwindcss": "^0.7.4"
   },

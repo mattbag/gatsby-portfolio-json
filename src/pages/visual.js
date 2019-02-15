@@ -10,7 +10,7 @@ import appSstyles from '../styles/apps.module.css'
 
 const VisualPage = ({ data }) => (
   <Layout>
-    <div className="py-6" id="sites" />
+    <div className="md:py-6" id="sites" />
     <section className={styles.grid}>
       {data.allSitesYaml &&
         data.allSitesYaml.edges.map(
@@ -28,8 +28,8 @@ const VisualPage = ({ data }) => (
                     />
                   )}
                 </div>
-                <div className={styles.label}>
-                  <div className={styles.label__in}>{`{data: "${name}"`}}</div>
+                <div className={styles.label + " hover:text-blue"}>
+                  {`{data: "${name}"`}}
                 </div>
               </a>
             </article>
@@ -62,19 +62,17 @@ const VisualPage = ({ data }) => (
                 {node.name}
                 {i % 2 !== 0 && ' =>'}
               </h2>
-              <p className="my-8">{node.copy}</p>
+              <p className="my-12">{node.copy}</p>
               <a
                 href={node.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="py-2"
                 style={{
-                  color: 'white',
-                  borderLeft: `2px dotted var(--blue)`,
-                  padding: `.5rem`,
-                  textDecoration: 'none',
+                  borderBottom: `2px dashed white`
                 }}
               >
-                open in browser
+                {`onClick() => open in browser`}
               </a>
             </div>
           </React.Fragment>

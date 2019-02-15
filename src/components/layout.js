@@ -37,7 +37,7 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
 
         <Nav />
-        <main className="container mx-auto py-8" style={{ maxWidth: '90%' }}>
+        <main className="container mx-auto py-8 pr-6 md:pr-0" style={{ maxWidth: '90%' }}>
           {children}
         </main>
 
