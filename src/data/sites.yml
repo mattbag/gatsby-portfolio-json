@@ -20,10 +20,12 @@
   name: FE Design System
 - url: https://atlasagency.com.au
   name: Html Landing
+- url: https://www.interesting.com.au/case-studies/recomazing.html
+  name: .Net + React Community (Closed)
 - url: http://caoa.com.au
   name: WP Custom Site
 - url: https://www.beautyinsider.com.au
-  name: WP Custom Blog
+  name: Umbraco Custom Blog
 - url: https://www.centralelement.com.au
   name: WP Custom Site
 - url: https://www.themalton.com.au
@@ -44,10 +46,10 @@
   name: Umbraco Custom Site
 - url: http://www.mulfordplastics.com.au
   name: Umbraco Custom Site
-- url: http://www.graple.io
-  name: Umbraco Custom ecomm network
+# - url: http://www.graple.io
+  # name: Umbraco Custom ecomm network
 - url: http://www.sprintr.com.au
-  name: WP Divi Site
+  name: WP Divi Custom Site
 - url: http://www.threadtogether.org
   name: WP Custom Site
 - url: http://annex.12creekstreet.com.au
