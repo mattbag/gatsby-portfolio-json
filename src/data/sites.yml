@@ -1,21 +1,9 @@
 - url: https://mattbag.github.io
-  name: My Portfolio 2019
-- url: https://mattbag.github.io/portfolio-2018
   name: My Portfolio 2018
 - url: https://mattbag.github.io/wp-gatsby
   name: Gatsby wp demo
 # - url: https://gatsby-gallery-netlify-cms.netlify.com
   # name: Gatsby Gallery Starter
-- url: https://divebell.band
-  name: Gatsby + Netlify CMS
-- url: https://lisaye.netlify.com
-  name: Gatsby + Netlify CMS
-- url: https://ancient-silverback.netlify.com
-  name: Nuxt + storyblok
-- url: https://bubbling-beebles.netlify.com
-  name: Nuxt + storyblok
-- url: https://nuxt-drivershub.netlify.com
-  name: Nuxt + WP Community
 - url: https://mattbag-2017.netlify.com
   name: Gatsby Contenful
 - url: http://borntobewise.altervista.org
@@ -32,19 +20,19 @@
   name: FE Design System
 - url: https://atlasagency.com.au
   name: Html Landing
+- url: https://www.interesting.com.au/case-studies/recomazing.html
+  name: .Net + React Community (Closed)
 - url: http://caoa.com.au
   name: WP Custom Site
 - url: https://www.beautyinsider.com.au
-  name: Umbraco Custom Site
+  name: Umbraco Custom Blog
 - url: https://www.centralelement.com.au
   name: WP Custom Site
 - url: https://www.themalton.com.au
   name: WP Custom Site
 # - url: https://www.drivershq.com.au
   # name: Static Umbraco Site
-- url: https://brainlightwellness.com.au
-  name: WP Custom Site
-- url: https://rayleighstudio.com.au
+- url: https://brainlightwellness.com.au/
   name: WP Custom Site
 - url: https://av1.com.au
   name: WP Custom Site
@@ -52,16 +40,16 @@
   name: WP Custom Site
 - url: https://buterinlestrange.com.au
   name: WP Custom Site
-# - url: http://www.thehourglass.com
-#   name: WP Custom Multi site network
+- url: http://www.thehourglass.com
+  name: WP Custom Multi site network
 - url: http://www.pallascapital.com.au
   name: Umbraco Custom Site
 - url: http://www.mulfordplastics.com.au
   name: Umbraco Custom Site
-- url: http://www.graple.io
-  name: Umbraco Custom ecomm network
+# - url: http://www.graple.io
+  # name: Umbraco Custom ecomm network
 - url: http://www.sprintr.com.au
-  name: WP Divi Site
+  name: WP Divi Custom Site
 - url: http://www.threadtogether.org
   name: WP Custom Site
 - url: http://annex.12creekstreet.com.au

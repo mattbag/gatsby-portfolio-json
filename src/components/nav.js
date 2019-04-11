@@ -5,23 +5,23 @@ const vertical = {
   writingMode: 'vertical-rl',
 }
 const Nav = () => (
-  <nav className="py-6 fixed pin-r pin-t-10">
+  <nav className="py-6 fixed pin-r w-12">
     <ul style={vertical} className="list-reset flex">
       <li className="m-2 md:m-4">
-        <Link to="/">/json</Link>
+        <Link to="/">~/json</Link>
       </li>
       <li className="m-2 md:m-4">
-        <a href="#sites">/sites</a>
+        <a href="#sites">~/sites</a>
       </li>
       <li className="m-2 md:m-4">
-        <a href="#apps">/apps</a>
+        <a href="#apps">~/apps</a>
       </li>
       {/* <li className="m-2 md:m-4"><a href="#about">/about</a></li> */}
       <li className="m-2 md:m-4">
-        <a href="#channels">/channels</a>
+        <a href="#channels">~/channels</a>
       </li>
       <li className="m-2 md:m-4">
-        <Link to="/visual">/visual</Link>
+        <Link to="/visual">~/visual</Link>
       </li>
     </ul>
   </nav>
