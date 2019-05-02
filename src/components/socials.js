@@ -28,6 +28,7 @@ export default () => (
           style={{
             margin: 2,
             padding: 2,
+            transform: `rotate(-0.02turn)`,
           }}
         >
           <a

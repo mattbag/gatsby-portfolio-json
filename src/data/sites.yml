@@ -1,4 +1,4 @@
-- url: https://mattbag.github.io
+- url: https://mattbag.github.io/portfolio-2018
   name: My Portfolio 2018
 - url: https://mattbag.github.io/wp-gatsby
   name: Gatsby wp demo
@@ -6,6 +6,12 @@
   # name: Gatsby Gallery Starter
 - url: https://mattbag-2017.netlify.com
   name: Gatsby Contenful
+- url: https://nuxt-drivershub.netlify.com
+  name: Nuxt Storyblok
+- url: https://bubbling-beebles.netlify.com
+  name: Nuxt Storyblok
+- url: https://ancient-silverback.netlify.com
+  name: Nuxt Wp Rest Community
 - url: http://borntobewise.altervista.org
   name: React WP
 - url: https://mattbag.github.io/folio2016
