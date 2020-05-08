@@ -1,10 +1,11 @@
-@tailwind preflight;
+/*! purgecss start ignore */
+@tailwind base;
 @tailwind components;
+/*! purgecss end ignore */
 @tailwind utilities;
 
-
-$main: 'blue';
-$accent: 'orange';
+/* $main: "blue";
+$accent: "orange"; */
 
 :root {
   --black: #0a1723;
@@ -15,9 +16,8 @@ $accent: 'orange';
   --cells: 3;
   --h-size: calc(1rem + 1vw);
 }
-html {
-  font-size: 100%;
-  @media screen and (min-wdith:768px){
+@media screen and (min-wdith: 768px) {
+  html {
     font-size: 120%;
   }
 }
@@ -26,18 +26,19 @@ html {
   scroll-behavior: smooth;
   @apply font-mono text-white bg-black;
   background-color: var(--black);
+  color: var(--white);
 }
 
-[target='_blank'] {
+[target="_blank"] {
   cursor: alias;
 }
 
 a {
   cursor: crosshair;
-  @apply no-underline text-#{$main}-lighter;
-  &:hover {
-    @apply text-#{$main}-light;
-  }
+  @apply no-underline text-blue-500;
+}
+a:hover {
+  @apply text-blue-600;
 }
 
 p {
@@ -55,8 +56,9 @@ p {
 }
 
 .bg {
-  background-color:#0087ff;
-  background-image: url('/img/as.gif');
+  /* background-color: #0087ff; */
+  @apply .bg-blue-500;
+  background-image: url("/img/as.gif");
   background-attachment: fixed;
   background-blend-mode: luminosity;
 }

@@ -1,10 +1,9 @@
-import React from 'react'
-import styles from '../styles/master.module.css'
-import appStyles from '../styles/apps.module.css'
+import React from "react";
+import styles from "../css/master.module.css";
+import appStyles from "../css/apps.module.css";
 
-export default props => {
-
- const [play, setPlay] = React.useState(false)
+export default (props) => {
+  const [play, setPlay] = React.useState(false);
 
   return (
     <div
@@ -14,21 +13,21 @@ export default props => {
       }}
     >
       <div
-        onClick={()=>setPlay(true)}
+        onClick={() => setPlay(true)}
         className={appStyles.play}
         style={{
-          display: play ? 'none' : 'initial',
+          display: play ? "none" : "initial",
         }}
       >
-        <div style={{ position: 'relative' }}>
+        <div style={{ position: "relative" }}>
           <div className={appStyles.pulse} />
           <div
             className={appStyles.pulse}
             style={{
-              width: '3rem',
-              height: '3rem',
+              width: "3rem",
+              height: "3rem",
               // animationDelay: '400ms',
-              animationDuration: '2500ms',
+              animationDuration: "2500ms",
             }}
           />
           <svg
@@ -36,7 +35,7 @@ export default props => {
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
-            style={{ width: '100%', height: '100%', zIndex: 1 }}
+            style={{ width: "100%", height: "100%", zIndex: 1 }}
           >
             <path
               // className={styles.shadow}
@@ -48,9 +47,9 @@ export default props => {
       </div>
       <iframe
         title={props.name}
-        src={play ? props.url : ''}
+        src={play ? props.url : ""}
         className={appStyles.frame}
       />
     </div>
-  )
-}
+  );
+};

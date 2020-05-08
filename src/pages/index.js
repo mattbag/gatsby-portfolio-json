@@ -1,8 +1,9 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-// import Image from '../components/image'
-import Layout from '../components/layout'
-// import Nav from '../components/nav'
+import React from "react";
+import { Link, graphql } from "gatsby";
+import PropTypes from "prop-types";
+
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 export const query = graphql`
   query {
@@ -23,87 +24,101 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-const IndexPage = ({
+function IndexPage({
   data: {
     allSitesYaml: { edges: sites },
     allAppsYaml: { edges: apps },
   },
-}) => (
-  <Layout>
-    <div className="p-2 md:p-8 overflow-auto">
-      <p>{'{'}</p>
-      <div className="pl-4" style={{whiteSpace:'nowrap'}}>
-        <p>{'"Author" : "Matt Bagni",'}</p>
-        <p>{'"Version" : "2019",'}</p>
-        <p>
-          {'"Location" : '}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="//atlasagency.com.au"
-          >
-            "Sydney"
-          </a>
-        </p>
-        <p>
-          {'"Visual version" :'} <Link to="/visual">"Visit"</Link>,
-        </p>
+}) {
+  // console.log("====");
+  // console.log(sites);
+  // console.log("====");
 
-        <p>"Projects":{'{'}</p>
+  return (
+    <Layout>
+      <SEO
+        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        title="Home"
+      />
+      <div className="p-2 md:p-8 overflow-auto">
+        <p>{"{"}</p>
+        <div className="pl-4" style={{ whiteSpace: "nowrap" }}>
+          <p>{'"Author" : "Matt Bagni",'}</p>
+          <p>{'"Version" : "2019",'}</p>
+          <p>
+            {'"Location" : '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="//atlasagency.com.au"
+            >
+              "Sydney"
+            </a>
+          </p>
+          <p>
+            {'"Visual version" :'} <Link to="/visual">"Visit"</Link>,
+          </p>
 
-        {/* block start */}
-        <div className="pl-4" id="sites">
-          <p>"Sites":{'['}</p>
-          <ul className="list-reset ml-4">
-            {sites.map(({ node: s }) => (
-              <li className="my-2" key={s.url}>
-                <span>{'{'}</span>
-                <div className="p-2">
-                  "url" :{' '}
-                  <a target="_blank" rel="noopener noreferrer" href={s.url}>
-                    {s.url.replace('http://', '').replace('https://', '')}
-                  </a>
-                  , <br />
-                  "data" : "{s.name}", <br />
-                </div>
-                <span>{'},'}</span>
-              </li>
-            ))}
-          </ul>
-          <p>{'],'}</p>
+          <p>"Projects":{"{"}</p>
+
+          {/* block start */}
+          <div className="pl-4" id="sites">
+            <p>"Sites":{"["}</p>
+            <ul className="list-reset ml-4">
+              {sites.map(({ node: s }) => (
+                <li className="my-2" key={s.url}>
+                  <span>{"{"}</span>
+                  <div className="p-2">
+                    "url" :{" "}
+                    <a target="_blank" rel="noopener noreferrer" href={s.url}>
+                      {s.url.replace("http://", "").replace("https://", "")}
+                    </a>
+                    , <br />
+                    "data" : "{s.name}", <br />
+                  </div>
+                  <span>{"},"}</span>
+                </li>
+              ))}
+            </ul>
+            <p>{"],"}</p>
+          </div>
+          {/* block end */}
+
+          {/* block start */}
+          <div className="pl-4" id="apps">
+            <p>"Apps":{"["}</p>
+            <ul className="list-reset ml-4">
+              {apps.map(({ node: a }) => (
+                <li className="my-2" key={a.url}>
+                  <span>{"{"}</span>
+                  <div className="p-2">
+                    "url" :{" "}
+                    <a target="_blank" rel="noopener noreferrer" href={a.url}>
+                      {a.url.replace("https://", "")}
+                    </a>
+                    , <br />
+                    "data" : "{a.name}", <br />
+                  </div>
+                  <span>{"},"}</span>
+                </li>
+              ))}
+            </ul>
+            <p>{"]"}</p>
+          </div>
+          {/* block end */}
+
+          <p>{"},"}</p>
         </div>
-        {/* block end */}
-
-        {/* block start */}
-        <div className="pl-4" id="apps">
-          <p>"Apps":{'['}</p>
-          <ul className="list-reset ml-4">
-            {apps.map(({ node: a }) => (
-              <li className="my-2" key={a.url}>
-                <span>{'{'}</span>
-                <div className="p-2">
-                  "url" :{' '}
-                  <a target="_blank" rel="noopener noreferrer" href={a.url}>
-                    {a.url.replace('https://', '')}
-                  </a>
-                  , <br />
-                  "data" : "{a.name}", <br />
-                </div>
-                <span>{'},'}</span>
-              </li>
-            ))}
-          </ul>
-          <p>{']'}</p>
-        </div>
-        {/* block end */}
-
-        <p>{'},'}</p>
+        <p>{"}"}</p>
       </div>
-      <p>{'}'}</p>
-    </div>
-  </Layout>
-)
+    </Layout>
+  );
+}
 
-export default IndexPage
+IndexPage.propTypes = {
+  // children: PropTypes.node.isRequired,
+};
+
+export default IndexPage;

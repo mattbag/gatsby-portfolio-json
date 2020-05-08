@@ -1,12 +1,12 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import Layout from '../components/layout'
+import React from "react";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
+import Layout from "../components/layout";
 
-import Phone from './../components/phone'
+import Phone from "./../components/phone";
 
-import styles from '../styles/master.module.css'
-import appSstyles from '../styles/apps.module.css'
+import styles from "../css/master.module.css";
+import appSstyles from "../css/apps.module.css";
 
 const VisualPage = ({ data }) => (
   <Layout>
@@ -54,13 +54,13 @@ const VisualPage = ({ data }) => (
             <div
               className={appSstyles.apptext}
               style={{
-                textAlign: i % 2 === 0 ? '' : 'right',
+                textAlign: i % 2 === 0 ? "" : "right",
               }}
             >
               <h2 className="mt-0" style={{ fontSize: `var(--h-size)` }}>
-                {i % 2 === 0 && '<= '}
+                {i % 2 === 0 && "<= "}
                 {node.name}
-                {i % 2 !== 0 && ' =>'}
+                {i % 2 !== 0 && " =>"}
               </h2>
               <p className="my-12">{node.copy}</p>
               <a
@@ -69,7 +69,7 @@ const VisualPage = ({ data }) => (
                 rel="noopener noreferrer"
                 className="py-2"
                 style={{
-                  borderBottom: `2px dashed white`
+                  borderBottom: `2px dashed white`,
                 }}
               >
                 {`onClick() => open in browser`}
@@ -80,15 +80,15 @@ const VisualPage = ({ data }) => (
     </section>
 
     <div
-      style={{ maxWidth: '300px', bottom: 10, left: 10 }}
-      className={styles.blocker + ' fixed p-4 bg-blue-light'}
+      style={{ maxWidth: "300px", bottom: 10, left: 10 }}
+      className={styles.blocker + " fixed p-4 bg-blue-light"}
     >
       You might want an updated browser to see this correctly!
     </div>
   </Layout>
-)
+);
 
-export default VisualPage
+export default VisualPage;
 
 export const query = graphql`
   query SitesQuery {
@@ -119,4 +119,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

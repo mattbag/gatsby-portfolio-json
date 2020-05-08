@@ -1,6 +1,6 @@
-import React from 'react'
-import Img from 'gatsby-image'
-import { StaticQuery, graphql } from 'gatsby'
+import React from "react";
+import Img from "gatsby-image";
+import { StaticQuery, graphql } from "gatsby";
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -26,7 +26,10 @@ const Logo = () => (
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={(data) => (
+      <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+      // <pre>{JSON.stringify(data)}</pre>
+    )}
   />
-)
-export default Logo
+);
+export default Logo;
