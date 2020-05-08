@@ -39,7 +39,7 @@ function Layout({ children }) {
                 overflow: "hidden",
               }}
             >
-              {/* <Image /> */}
+              <Image />
             </div>
           </a>
         </div>

@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-tailwindcss-portoflio-2019",
+  "name": "gatsby-tailwindcss-portoflio-2020",
   "description": "Just another Gatsby TailwindCSS with SASS portfolio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Matt Bagni <mattbag00@gmail.com>",
   "dependencies": {
     "gatsby": "2.21.19",

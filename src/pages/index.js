@@ -46,7 +46,7 @@ function IndexPage({
         <p>{"{"}</p>
         <div className="pl-4" style={{ whiteSpace: "nowrap" }}>
           <p>{'"Author" : "Matt Bagni",'}</p>
-          <p>{'"Version" : "2019",'}</p>
+          <p>{'"Version" : "2020",'}</p>
           <p>
             {'"Location" : '}
             <a

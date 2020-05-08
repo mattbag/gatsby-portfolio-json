@@ -17,7 +17,7 @@
 - url: https://www.mortgagechoice.com.au
   name: FE Design System
 - url: https://atlasagency.com.au
-  name: Html Landing
+  name: Custom WP
 - url: https://www.interesting.com.au/case-studies/recomazing.html
   name: .Net + React Community (Closed)
 - url: http://caoa.com.au
@@ -36,16 +36,22 @@
   name: WP Custom Site
 - url: http://www.thehourglass.com
   name: WP Custom Multi site network
-- url: http://www.pallascapital.com.au
-  name: Umbraco Custom Site
 - url: http://www.mulfordplastics.com.au
   name: Umbraco Custom Site
 - url: https://performancespace.com.au
   name: Umbraco Custom Site
-- url: https://cfgroup.com.au
+- url: https://cfgroup.net.au
   name: WP Custom Site
 - url: https://contemporaryarttasmania.org
   name: WP Custom Site
+- url: https://rondo.com.au
+  name: Custom Site Umbraco/Vue Multi country
+- url: https://nataliemariejewellery.com
+  name: Custom Shopify
+- url: https://gotsoul.com
+  name: Custom Wp
+- url: https://ignazia.com.au
+  name: Custom Magento
 # - url: http://www.graple.io
 # name: Umbraco Custom ecomm network
 # - url: http://www.sprintr.com.au

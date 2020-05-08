@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
     <div className="container mx-auto flex justify-between">
       <h1 className="text-base md:text-xl">
         <Link to="/" className="no-underline text-blue-light">
-          /MattBagni/2019/portfolio
+          /MattBagni/2020/portfolio
         </Link>
       </h1>
       <div
