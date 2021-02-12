@@ -1,3 +1,33 @@
+# - url: https://performancespace.com.au
+# name: Umbraco Custom Site
+- url: https://christiespaces.com.au
+  name: Umbraco Custom Site
+- url: https://altogethergroup.com.au
+  name: Umbraco Custom Site
+- url: https://atlasagency.com.au
+  name: Custom WP + all sites included
+- url: http://caoa.com.au
+  name: WP Custom Site
+- url: https://waterbrook.com.au
+  name: WP Custom Site
+- url: https://www.oxfordproperties.com/corp
+  name: 11ty site from api feed
+- url: https://silvesterfuller.com
+  name: WP Custom Site
+- url: https://www.centralelement.com.au
+  name: WP Custom Site
+- url: https://www.themalton.com.au
+  name: WP Custom Site
+- url: https://brainlightwellness.com.au
+  name: WP Custom Site
+- url: https://av1.com.au
+  name: WP Custom Site
+- url: http://www.massimomele.com
+  name: WP Custom Site
+- url: https://buterinlestrange.com.au
+  name: WP Custom Site
+- url: http://www.thehourglass.com
+  name: WP Custom Multi site network
 - url: https://mattbag.github.io/portfolio-2018
   name: My Portfolio 2018
 - url: https://mattbag.github.io/wp-gatsby
@@ -16,29 +46,9 @@
   name: Static Wp 2016
 - url: https://www.mortgagechoice.com.au
   name: FE Design System
-- url: https://atlasagency.com.au
-  name: Custom WP
 - url: https://www.interesting.com.au/case-studies/recomazing.html
   name: .Net + React Community (Closed)
-- url: http://caoa.com.au
-  name: WP Custom Site
-- url: https://www.centralelement.com.au
-  name: WP Custom Site
-- url: https://www.themalton.com.au
-  name: WP Custom Site
-- url: https://brainlightwellness.com.au
-  name: WP Custom Site
-- url: https://av1.com.au
-  name: WP Custom Site
-- url: http://www.massimomele.com
-  name: WP Custom Site
-- url: https://buterinlestrange.com.au
-  name: WP Custom Site
-- url: http://www.thehourglass.com
-  name: WP Custom Multi site network
 - url: http://www.mulfordplastics.com.au
-  name: Umbraco Custom Site
-- url: https://performancespace.com.au
   name: Umbraco Custom Site
 - url: https://cfgroup.net.au
   name: WP Custom Site
@@ -46,22 +56,24 @@
   name: WP Custom Site
 - url: https://rondo.com.au
   name: Custom Site Umbraco/Vue Multi country
+- url: https://www.rondo.com.au/find-a-supplier/
+  name: Vue dynamic map
 - url: https://nataliemariejewellery.com
   name: Custom Shopify
 - url: http://gotsoulcollective.com
   name: Custom Wp
-- url: https://ignazia.com.au
-  name: Custom Magento
+# - url: https://ignazia.com.au
+#   name: Custom Magento
 # - url: http://www.graple.io
 # name: Umbraco Custom ecomm network
 # - url: http://www.sprintr.com.au
 #   name: WP Divi Custom Site
 # - url: http://annex.12creekstreet.com.au
 #   name: WP Custom Site Vanilla JS
-# - url: http://www.born-raised.com.au
-#   name: WP Custom Site
-# - url: http://www.clarkeandhumel.com.au
-#   name: Umbraco Custom Site
+- url: http://www.born-raised.com.au
+  name: WP Custom Site
+- url: http://www.clarkeandhumel.com.au
+  name: Umbraco Custom Site
 # - url: http://www.easyshirt.it
 #   name: Wp ecomm
 # - url: http://www.maglificiolsm.com
