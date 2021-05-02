@@ -6,6 +6,8 @@
   name: Umbraco Custom Site
 - url: https://atlasagency.com.au
   name: Custom WP + all sites included
+- url: https://louisthomasdesign.com
+  name: Prismic cms + nuxt + netlify
 - url: http://caoa.com.au
   name: WP Custom Site
 - url: https://waterbrook.com.au

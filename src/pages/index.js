@@ -57,8 +57,9 @@ function IndexPage({
               "Sydney"
             </a>
           </p>
+          <p>{'"hobbies" : ["Board Games", "mtg", "Stock Market", "Cryptocurrency", "dogs"],'}</p>
           <p>
-            {'"Visual version" :'} <Link to="/visual">"Visit"</Link>,
+            {'"Visual version" :'} <Link to="/visual">"/visual"</Link>,
           </p>
 
           <p>"Projects":{"{"}</p>
